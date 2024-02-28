@@ -59,8 +59,9 @@ body {
 }
 
 .home-ha {
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-    height: 400px;
+    background-image: url('../img/background.jpg');
+    /*url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp') */
+    height: 800px;
 }
 
 header {
@@ -90,4 +91,32 @@ nav {
     margin: 0 0 60px 0;
     padding: 0;
     border: none;
+}
+
+.contact {
+    width: 400px;
+    background-color: #240f04;
+    box-shadow: 0 0 9px 0 rgba(53, 32, 26, 0.3);
+    margin: 100px auto;
+}
+
+.contact h1 {
+    text-align: center;
+    color: hsla(0, 0%, 100%, .75);
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.form-ha {
+    margin: auto;
+    padding: 10px;
+
 }
