@@ -64,6 +64,10 @@ body {
     height: 800px;
 }
 
+.port-background {
+    background-color: #2e2e2e;
+}
+
 header {
     background-color: #F26B1D;
     padding: 10px;
@@ -95,7 +99,6 @@ nav {
 
 .contact {
     width: 400px;
-    background-color: #240f04;
     box-shadow: 0 0 9px 0 rgba(53, 32, 26, 0.3);
     margin: 100px auto;
 }
@@ -118,5 +121,12 @@ form {
 .form-ha {
     margin: auto;
     padding: 10px;
+
+}
+
+#results-container {
+    margin-top: 30px;
+    background-color: #2d3035;
+    min-height: 10vh;
 
 }

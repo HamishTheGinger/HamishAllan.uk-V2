@@ -53,7 +53,7 @@
                 <div class="collapse navbar-collapse " id="navbarExample01">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="projects.html">Projects</a>
@@ -72,51 +72,63 @@
 
 
     <br>
-    <div class="contact">
+    <div class="shadow-lg bg-body contact container rounded-4" data-bs-theme="dark">
         <h1>Contact</h1>
-        <form class="align-items-center">
+        <form>
             <!-- Name input -->
-            <div data-mdb-input-init class="form-outline mb-4">
-                <input type="text" id="form4Example1" class="form-control" />
-                <label class="form-label" for="form4Example1">Name</label>
+            <div class="mb-4 w-100">
+                <label class="form-label text-light" for="name">Name</label>
+                <input type="text" id="name" class="form-control" />
             </div>
 
             <!-- Email input -->
-            <div data-mdb-input-init class="form-outline mb-4">
-                <input type="email" id="form4Example2" class="form-control" />
-                <label class="form-label" for="form4Example2">Email address</label>
+            <div data-mdb-input-init class="mb-4 w-100">
+                <label class="form-label text-light" for="email">Email address</label>
+                <input type="email" id="email" class="form-control" />
             </div>
 
             <!-- Message input -->
-            <div data-mdb-input-init class="form-outline mb-4">
+            <div data-mdb-input-init class="mb-4 w-100">
+                <label class="form-label text-light" for="form4Example3">Message</label>
                 <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-                <label class="form-label" for="form4Example3">Message</label>
             </div>
 
             <!-- Checkbox -->
             <div class="form-check d-flex justify-content-center mb-4">
                 <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
-                <label class="form-check-label" for="form4Example4">
+                <label class="form-check-label text-light" for="form4Example4">
                     Send me a copy of this message
                 </label>
             </div>
 
             <!-- Submit button -->
-            <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Send</button>
+            <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Send</button>
         </form>
     </div>
 
     <footer class="text-center fixed-bottom text-white" style="background-color: #2d3035;">
         <!-- Grid container -->
+        <div class="p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Linkedin -->
+            <a data-mdb-ripple-init class="btn text-white m-1" style="background-color: #0082ca;"
+              href="https://www.linkedin.com/in/hamish-a-476503298/" role="button"><i class="fab fa-linkedin-in"></i></a>
+            <!-- Github -->
+            <a data-mdb-ripple-init class="btn text-white m-1" style="background-color: #333333;"
+              href="https://github.com/HamishTheGinger" role="button"><i class="fab fa-github"></i></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
         <!-- Grid container -->
-
+  
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-            © 2024 Copyright:
-            <a class="text-white" href="https://hamishallan.uk/">Hamish Allan</a>
+          © 2024 Copyright:
+          <a class="text-white" href="https://hamishallan.uk/">Hamish Allan</a>
         </div>
         <!-- Copyright -->
-    </footer>
+      </footer>
 
     </div>
 </body>
