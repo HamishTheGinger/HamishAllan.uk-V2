@@ -64,6 +64,12 @@ body {
     height: 800px;
 }
 
+.room-finder {
+    background-image: url('../img/room-background.jpg');
+    /*url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp') */
+    height: 800px;
+}
+
 .port-background {
     background-color: #2e2e2e;
 }
