@@ -44,14 +44,28 @@
 
 <body>
     <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js">
+    </script>
 
     <script>// Initialization for ES Users
         import { Collapse, Ripple, initMDB } from "mdb-ui-kit";
 
-        initMDB({ Collapse, Ripple });</script>
+        initMDB({ Collapse, Ripple });
+    </script>
 
-
+    <div id="myModal" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Course Content Mapping System (Group Project)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            </div>
+        </div>
+    </div>
     <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg" style="padding: 0px;">
@@ -148,19 +162,17 @@
                                     </li>
                                     <li><a href="#porfolio_menu" data-filter=".websites">websites</a></li>
                                     <li><a href="#porfolio_menu" data-filter=".webDesign">web design</a></li>
-                                    <li><a href="#porfolio_menu" data-filter=".appsDevelopment">apps development</a>
-                                    </li>
-                                    <li><a href="#porfolio_menu" data-filter=".GraphicDesign">graphic design</a>
-                                    </li>
+                                    <li><a href="#porfolio_menu" data-filter=".appsDevelopment">apps development</a></li>
                                     <li><a href="#porfolio_menu" data-filter=".responsive">responsive</a></li>
+                                    <li><a href="#porfolio_menu" data-filter=".trainingdevelopment">training/development</a></li>
                                 </ul>
                             </div>
                             <div class="portfolio_content">
                                 <div class="row" id="portfolio">
                                     <div class="col-xs-12 col-sm-4 webDesign websites appsDevelopment responsive">
-                                        <div class="portfolio_single_content rounded-4 port-background p-2">
+                                        <div id="pf1" class="portfolio_single_content rounded-4 port-background p-2">
                                             <img src="img/portfolio/CCM_Website.jpg" alt="CCM Website" />
-                                            <div>1
+                                            <div>
                                                 <a href="https://github.com/HamishTheGinger/LISU-Course-Content-Mapping-System">Course Content Mapping System (Group Project)</a>
                                                 <span>ASP.NET</span>
                                             </div>
@@ -229,6 +241,24 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="col-xs-12 col-sm-4 trainingdevelopment ">
+                                        <div class="portfolio_single_content rounded-4 port-background p-2">
+                                            <img src="img/portfolio/pdf.jpg" alt="title" />
+                                            <div>
+                                                <a href="#">Till System Quickfix Guide</a>
+                                                <span>Guide</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 trainingdevelopment ">
+                                        <div class="portfolio_single_content rounded-4 port-background p-2">
+                                            <img src="img/portfolio/pdf.jpg" alt="title" />
+                                            <div>
+                                                <a href="docs/Projects_QueueManagementTrainingNotes.pdf">Queue Management Training</a>
+                                                <span>Training</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -238,8 +268,6 @@
         </div>
     </section>
     <!-- End portfolio -->
-
-
 
 <br><br><br>
 
@@ -277,4 +305,31 @@
 
     <script src="js/script.js"></script>
 
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("pf1");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("btn-close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>   
 </body>

@@ -1,5 +1,17 @@
+:root {
+  --primary-bg-colour: #2e2e2e; /* global scope */
+}
+
 #portfolio-section {
     padding-bottom: 50px;
+}
+
+.modal-header {
+    background-color: #F26B1D;
+}
+
+.modal-content{
+    background-color: var(--primary-bg-colour);
 }
 
 .portfolio_area {}
