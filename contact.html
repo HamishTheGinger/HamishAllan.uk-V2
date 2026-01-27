@@ -26,6 +26,8 @@
         crossorigin="anonymous"></script>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <link rel="preconnect" href="https://challenges.cloudflare.com">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
     <link href="css/style.css" rel="stylesheet" />
 
@@ -104,7 +106,7 @@
                     Send me a copy of this message
                 </label>
             </div>
-
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAACUFLhq0TsSnPXZF" data-theme="dark" data-size="normal" data-callback="onSuccess"></div>
             <!-- Submit button -->
             <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Send</button>
         </form>
